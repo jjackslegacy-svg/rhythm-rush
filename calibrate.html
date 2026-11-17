@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Prototype: latency calibration (step 3)</title>
+<style>
+  body { font: 14px/1.5 ui-monospace, Menlo, Consolas, monospace; background: #111; color: #ddd; margin: 0; padding: 20px; max-width: 720px; }
+  h1 { font-size: 16px; margin: 0 0 8px; }
+  p { color: #aaa; }
+  .meta span { display: block; color: #9a9; }
+  button { font: inherit; padding: 8px 14px; margin: 12px 8px 12px 0; background: #246; color: #fff; border: 0; cursor: pointer; }
+  button:disabled { background: #333; color: #777; cursor: default; }
+  #progress { font-size: 20px; margin: 8px 0; }
+  #live { color: #8cf; }
+  #result { color: #8f8; font-size: 16px; margin-top: 12px; }
+  a { color: #8cf; }
+</style>
+</head>
+<body>
+  <h1>Latency calibration</h1>
+  <p>Press Start. A metronome will click at 90 BPM. Tap any key exactly on each click.
+     The first 4 taps are warm-up, then 16 are measured. Use the real MIDI keyboard when you have one.</p>
+  <div class="meta">
+    <span id="status">MIDI: starting...</span>
+    <span>Stored offset: <b id="stored">none</b></span>
+    <span>Clock pairing: <b id="method">-</b></span>
+    <span>Diagnostics: <b id="diag">-</b></span>
+  </div>
+  <p>Note: this saved number is only a default. The play page re-syncs in its own audio session, because the browser's
+     timing estimate can shift between page loads.</p>
+  <button id="start">Start</button>
+  <button id="reset">Clear stored offset</button>
+  <div id="progress"></div>
+  <div id="live"></div>
+  <div id="result"></div>
+  <p><a href="./index.html">back to readout</a></p>
+  <script type="module" src="./src/calibrate-main.js"></script>
+</body>
+</html>

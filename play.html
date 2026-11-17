@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Prototype: play (step 4)</title>
+<style>
+  body { font: 14px/1.5 ui-monospace, Menlo, Consolas, monospace; background: #111; color: #ddd; margin: 0; padding: 20px; max-width: 760px; }
+  h1 { font-size: 16px; margin: 0 0 8px; }
+  p, .meta span { color: #9a9; display: block; }
+  select, button { font: inherit; padding: 8px 12px; margin: 10px 8px 10px 0; background: #246; color: #fff; border: 0; cursor: pointer; }
+  button:disabled { background: #333; color: #777; cursor: default; }
+  #sync { background: #462; }
+  #phase { color: #888; }
+  #next { font-size: 64px; line-height: 1; height: 72px; }
+  #judge { font-size: 28px; height: 36px; }
+  .perfect { color: #6f6; } .good { color: #8cf; } .early, .late { color: #fc6; } .miss, .extra { color: #f66; }
+  #combo { color: #aaa; }
+  #result { white-space: pre; margin-top: 16px; color: #ccc; }
+  #diag { color: #777; }
+  a { color: #8cf; }
+</style>
+</head>
+<body>
+  <h1>Play</h1>
+  <p>1. Press <b>Sync</b> and tap any key on each click (20 taps). This measures timing in this exact audio session.<br>
+     2. Pick a piece, press <b>Start</b>. 4 count-in clicks, then the melody plays as tones. Play along; the big letter is the next note.</p>
+  <div class="meta">
+    <span id="status">MIDI: starting...</span>
+    <span>Calibration: <b id="cal">-</b></span>
+    <span>Windows: <b id="windows"></b></span>
+    <span>Fallback keys: a s d f g h j k = C4..C5</span>
+    <span id="diag"></span>
+  </div>
+  <button id="sync">Sync</button>
+  <select id="chart"></select>
+  <button id="start" disabled>Start</button>
+  <div id="phase"></div>
+  <div id="next"></div>
+  <div id="judge"></div>
+  <div id="combo"></div>
+  <div id="result"></div>
+  <p><a href="./calibrate.html">calibration page</a> · <a href="./index.html">readout</a></p>
+  <script type="module" src="./src/play-main.js"></script>
+</body>
+</html>

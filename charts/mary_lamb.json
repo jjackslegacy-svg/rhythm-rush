@@ -1,0 +1,170 @@
+{
+ "id": "mary_lamb",
+ "title": "Mary Had a Little Lamb",
+ "source": "Traditional (public domain), our arrangement",
+ "bpm": 90,
+ "difficulty": 1,
+ "register": {
+  "low": 60,
+  "high": 67
+ },
+ "lengthBeats": 32.0,
+ "notes": [
+  {
+   "pitch": 64,
+   "onset": 0.0,
+   "duration": 1,
+   "velocity": 80
+  },
+  {
+   "pitch": 62,
+   "onset": 1.0,
+   "duration": 1,
+   "velocity": 80
+  },
+  {
+   "pitch": 60,
+   "onset": 2.0,
+   "duration": 1,
+   "velocity": 80
+  },
+  {
+   "pitch": 62,
+   "onset": 3.0,
+   "duration": 1,
+   "velocity": 80
+  },
+  {
+   "pitch": 64,
+   "onset": 4.0,
+   "duration": 1,
+   "velocity": 80
+  },
+  {
+   "pitch": 64,
+   "onset": 5.0,
+   "duration": 1,
+   "velocity": 80
+  },
+  {
+   "pitch": 64,
+   "onset": 6.0,
+   "duration": 2,
+   "velocity": 80
+  },
+  {
+   "pitch": 62,
+   "onset": 8.0,
+   "duration": 1,
+   "velocity": 80
+  },
+  {
+   "pitch": 62,
+   "onset": 9.0,
+   "duration": 1,
+   "velocity": 80
+  },
+  {
+   "pitch": 62,
+   "onset": 10.0,
+   "duration": 2,
+   "velocity": 80
+  },
+  {
+   "pitch": 64,
+   "onset": 12.0,
+   "duration": 1,
+   "velocity": 80
+  },
+  {
+   "pitch": 67,
+   "onset": 13.0,
+   "duration": 1,
+   "velocity": 80
+  },
+  {
+   "pitch": 67,
+   "onset": 14.0,
+   "duration": 2,
+   "velocity": 80
+  },
+  {
+   "pitch": 64,
+   "onset": 16.0,
+   "duration": 1,
+   "velocity": 80
+  },
+  {
+   "pitch": 62,
+   "onset": 17.0,
+   "duration": 1,
+   "velocity": 80
+  },
+  {
+   "pitch": 60,
+   "onset": 18.0,
+   "duration": 1,
+   "velocity": 80
+  },
+  {
+   "pitch": 62,
+   "onset": 19.0,
+   "duration": 1,
+   "velocity": 80
+  },
+  {
+   "pitch": 64,
+   "onset": 20.0,
+   "duration": 1,
+   "velocity": 80
+  },
+  {
+   "pitch": 64,
+   "onset": 21.0,
+   "duration": 1,
+   "velocity": 80
+  },
+  {
+   "pitch": 64,
+   "onset": 22.0,
+   "duration": 1,
+   "velocity": 80
+  },
+  {
+   "pitch": 64,
+   "onset": 23.0,
+   "duration": 1,
+   "velocity": 80
+  },
+  {
+   "pitch": 62,
+   "onset": 24.0,
+   "duration": 1,
+   "velocity": 80
+  },
+  {
+   "pitch": 62,
+   "onset": 25.0,
+   "duration": 1,
+   "velocity": 80
+  },
+  {
+   "pitch": 64,
+   "onset": 26.0,
+   "duration": 1,
+   "velocity": 80
+  },
+  {
+   "pitch": 62,
+   "onset": 27.0,
+   "duration": 1,
+   "velocity": 80
+  },
+  {
+   "pitch": 60,
+   "onset": 28.0,
+   "duration": 4,
+   "velocity": 80
+  }
+ ]
+}

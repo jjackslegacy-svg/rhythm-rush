@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Prototype: game (step 5)</title>
+<style>
+  body { font: 14px/1.5 ui-monospace, Menlo, Consolas, monospace; background: #111; color: #ddd; margin: 0; padding: 16px; }
+  h1 { font-size: 16px; margin: 0 0 6px; }
+  .meta span { color: #9a9; display: block; }
+  #diag { color: #666; }
+  select, button { font: inherit; padding: 8px 12px; margin: 8px 8px 8px 0; background: #246; color: #fff; border: 0; cursor: pointer; }
+  button:disabled { background: #333; color: #777; cursor: default; }
+  #sync, #syncvis { background: #462; }
+  label { margin-right: 12px; color: #aaa; cursor: pointer; }
+  #phase { color: #aaa; min-height: 1.5em; }
+  #game { display: block; background: #111; border: 1px solid #333; margin-top: 6px; }
+  #result { white-space: pre; margin-top: 14px; color: #ccc; }
+  details { margin-top: 12px; color: #9a9; }
+  #summary { color: #8c8; font-size: 12px; }
+  a { color: #8cf; }
+</style>
+</head>
+<body>
+  <h1>Rhythm Rush</h1>
+  <div class="meta">
+    <span id="status">MIDI: starting...</span>
+    <span>Audio sync (input vs sound): <b id="cal">not synced</b> · Visual sync (input vs screen): <b id="vis">not synced</b></span>
+    <span>Windows: <span id="windows"></span></span>
+    <span>No MIDI keyboard? Use the letters printed on the piano keys (home row = right hand, bottom row = left hand).</span>
+    <span id="diag"></span>
+  </div>
+  <button id="sync">1. Sync audio</button>
+  <button id="syncvis">2. Sync visual</button>
+  <select id="chart"></select>
+  <button id="start" disabled>Start</button>
+  <label><input type="checkbox" id="optJudge" checked /> Hit indicators</label>
+  <label><input type="checkbox" id="optScore" checked /> Score and combo</label>
+  <div id="phase"></div>
+  <canvas id="game" width="640" height="560"></canvas>
+  <div id="result"></div>
+  <details id="summarywrap"><summary>structured summary (step 6, what the tutor will see)</summary><pre id="summary"></pre></details>
+  <p><a href="./play.html">text play page</a> · <a href="./calibrate.html">calibration page</a> · <a href="./readout.html">MIDI readout</a></p>
+  <script type="module" src="./src/game-main.js"></script>
+</body>
+</html>

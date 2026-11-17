@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Prototype: MIDI readout (step 2)</title>
+<style>
+  :root { --w: 34px; --bw: 20px; }
+  body { font: 14px/1.4 ui-monospace, Menlo, Consolas, monospace; background: #111; color: #ddd; margin: 0; padding: 20px; }
+  h1 { font-size: 16px; margin: 0 0 8px; }
+  .meta { color: #9a9; margin-bottom: 12px; }
+  .meta span { display: block; }
+  #keys { position: relative; height: 120px; width: calc(var(--white-count) * var(--w)); margin: 12px 0 16px; user-select: none; }
+  .key { position: absolute; top: 0; box-sizing: border-box; border: 1px solid #000; font-size: 10px; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 4px; }
+  .key.white { width: var(--w); height: 120px; background: #eee; color: #555; z-index: 1; }
+  .key.black { width: var(--bw); height: 74px; background: #222; z-index: 2; }
+  .key.on.white { background: #6cf; }
+  .key.on.black { background: #39c; }
+  #log { white-space: pre; }
+  .line.noteon { color: #8f8; }
+  .line.noteoff { color: #777; }
+  .hint { color: #777; margin-bottom: 8px; }
+</style>
+</head>
+<body>
+  <h1>MIDI readout</h1>
+  <div class="meta">
+    <span id="support">Web MIDI: checking...</span>
+    <span id="status">MIDI: starting...</span>
+    <span>Fallback (dev only): a s d f g h j k = C4..C5, w e t y u = sharps</span>
+    <span>Events received: <b id="count">0</b></span>
+  </div>
+  <div id="keys"></div>
+  <div class="hint">t = the event's own timestamp. "handled ... after event" = how late our code ran, which scoring will never use.</div>
+  <div id="log"></div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

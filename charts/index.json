@@ -1,0 +1,32 @@
+[
+ {
+  "id": "steps_c_major",
+  "title": "C Major Steps",
+  "difficulty": 1,
+  "bpm": 80
+ },
+ {
+  "id": "mary_lamb",
+  "title": "Mary Had a Little Lamb",
+  "difficulty": 1,
+  "bpm": 90
+ },
+ {
+  "id": "ode_to_joy",
+  "title": "Ode to Joy",
+  "difficulty": 2,
+  "bpm": 96
+ },
+ {
+  "id": "skips_and_runs",
+  "title": "Skips and Runs",
+  "difficulty": 3,
+  "bpm": 100
+ },
+ {
+  "id": "ode_two_hands",
+  "title": "Ode to Joy (two hands)",
+  "difficulty": 3,
+  "bpm": 84
+ }
+]

@@ -1,0 +1,110 @@
+{
+ "id": "steps_c_major",
+ "title": "C Major Steps",
+ "source": "Original exercise",
+ "bpm": 80,
+ "difficulty": 1,
+ "register": {
+  "low": 60,
+  "high": 72
+ },
+ "lengthBeats": 17.0,
+ "notes": [
+  {
+   "pitch": 60,
+   "onset": 0.0,
+   "duration": 1,
+   "velocity": 80
+  },
+  {
+   "pitch": 62,
+   "onset": 1.0,
+   "duration": 1,
+   "velocity": 80
+  },
+  {
+   "pitch": 64,
+   "onset": 2.0,
+   "duration": 1,
+   "velocity": 80
+  },
+  {
+   "pitch": 65,
+   "onset": 3.0,
+   "duration": 1,
+   "velocity": 80
+  },
+  {
+   "pitch": 67,
+   "onset": 4.0,
+   "duration": 1,
+   "velocity": 80
+  },
+  {
+   "pitch": 69,
+   "onset": 5.0,
+   "duration": 1,
+   "velocity": 80
+  },
+  {
+   "pitch": 71,
+   "onset": 6.0,
+   "duration": 1,
+   "velocity": 80
+  },
+  {
+   "pitch": 72,
+   "onset": 7.0,
+   "duration": 1,
+   "velocity": 80
+  },
+  {
+   "pitch": 72,
+   "onset": 8.0,
+   "duration": 1,
+   "velocity": 80
+  },
+  {
+   "pitch": 71,
+   "onset": 9.0,
+   "duration": 1,
+   "velocity": 80
+  },
+  {
+   "pitch": 69,
+   "onset": 10.0,
+   "duration": 1,
+   "velocity": 80
+  },
+  {
+   "pitch": 67,
+   "onset": 11.0,
+   "duration": 1,
+   "velocity": 80
+  },
+  {
+   "pitch": 65,
+   "onset": 12.0,
+   "duration": 1,
+   "velocity": 80
+  },
+  {
+   "pitch": 64,
+   "onset": 13.0,
+   "duration": 1,
+   "velocity": 80
+  },
+  {
+   "pitch": 62,
+   "onset": 14.0,
+   "duration": 1,
+   "velocity": 80
+  },
+  {
+   "pitch": 60,
+   "onset": 15.0,
+   "duration": 2,
+   "velocity": 80
+  }
+ ]
+}
